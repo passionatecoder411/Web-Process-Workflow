@@ -1,0 +1,432 @@
+/* Sections */
+
+.section {
+    position: relative;
+    width: 100%;
+    padding: 4rem 0;
+    color: inherit;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    &.bg-pos--top-center {
+        background-position: top center;
+    }
+
+    &.section--sm {
+        padding: 3rem 0;
+    }
+
+    &.section--lg {
+        padding: 6rem 0;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding: 2.5rem 0;
+
+        &.section--sm {
+            padding: 2rem 0;
+        }
+
+        &.section--lg {
+            padding: 4rem 0;
+        }
+    }
+}
+
+/* Hero Banner Sec CSS Start */
+section.hero-banner-main-sec {
+	position: relative;
+
+	.hero-banner-inner {
+		.hero-banner-content-area {
+			padding: 188px 0;
+
+			.hero-banner-title {
+				max-width: 300px;
+				margin: 0px auto 24px;
+
+				h1 {
+					font-family: 'HelveticaNeue';
+					font-size: 30px;
+					font-weight: 700;
+					line-height: 34px;
+					color: #000000;
+					text-align: center;
+					margin: 0px;
+				}
+			}
+
+			.hero-banner-con {
+				max-width: 454px;
+				margin: 0px auto 20px;
+
+				p {
+					font-family: 'Helvetica Neue';
+					font-size: 18px;
+					font-weight: 400;
+					line-height: 21px;
+					color: #000000;
+					text-align: center;
+					margin: 0px;
+				}
+			}
+
+			.hero-banner-btn {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				a {
+					font-family: 'HelveticaNeue';
+					font-size: 18px;
+					font-weight: 700;
+					line-height: 24px;
+					color: #FFFFFF;
+					text-align: center;
+					text-decoration: none;
+					text-transform: uppercase;
+					background: #D21B1B;
+					max-width: 213px;
+					width: 100%;
+					padding: 18px 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+		}
+
+		.hero-banner-img {
+			height: 100%;
+			width: 100%;
+
+			img {
+				object-fit: cover;
+			}
+		}
+	}
+}
+
+/* Hero Banner Sec CSS End */
+
+/* Product Slider Sec CSS Start */
+section.product-slider-main-sec {
+	position: relative;
+	padding: 54px 0px 40px;
+
+	.product-slider-inner {
+		margin-left: -18px;
+		margin-right: -18px;
+
+		.product-slider {
+			@media screen and (max-width: 1320px) {
+				max-width: calc(100% - 50px);
+				margin: 0 auto;
+			}
+
+			.product-slide {
+				.product-slide-inner {
+					padding: 0px 18px;
+
+					.product-slide-img {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						margin: 0px 0px 16px;
+
+						img {
+							max-width: 272px;
+							width: 100%;
+							height: 198px;
+							object-fit: contain;
+						}
+					}
+
+					.product-slide-title {
+						margin: 0px 0px 16px;
+
+						h3 {
+							font-family: 'HelveticaNeue';
+							font-size: 30px;
+							font-weight: 700;
+							line-height: 34px;
+							color: #000000;
+							text-align: center;
+							margin: 0px;
+						}
+					}
+
+					.product-slide-con {
+						p {
+							font-family: 'Helvetica Neue';
+							font-size: 18px;
+							font-weight: 400;
+							line-height: 21px;
+							color: #000000;
+							text-align: center;
+							margin: 0px;
+						}
+					}
+				}
+			}
+
+			.owl-nav {
+				margin: 0px;
+
+				button {
+
+					&.owl-prev,
+					&.owl-next {
+						margin: 0px;
+						width: 34px;
+						height: 34px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 0px;
+						position: absolute;
+						top: 155px;
+
+						&:before {
+							font-family: "Font Awesome 5 Pro";
+							font-weight: 900;
+							font-size: 34px;
+							color: #D21B1B;
+						}
+					}
+
+					&.owl-prev {
+						left: -54px;
+
+						@media screen and (max-width: 1320px) {
+							left: -34px;
+						}
+
+						@media screen and (max-width: 1250px) {
+							left: -20px;
+						}
+
+						&:before {
+							content: "\f053";
+						}
+					}
+
+					&.owl-next {
+						right: -54px;
+
+						@media screen and (max-width: 1320px) {
+							right: -34px;
+						}
+
+						@media screen and (max-width: 1250px) {
+							right: -20px;
+						}
+
+						&:before {
+							content: "\f054";
+						}
+					}
+
+					&.disabled {
+						opacity: 0.3;
+					}
+
+					&:hover {
+						background: transparent;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Product Slider Sec CSS End */
+
+/* Get in Touch Sec CSS Start */
+section.get-touch-main-sec {
+	position: relative;
+	padding: 100px 0px 60px;
+
+	.get-touch-inner {
+		.get-touch-left-area {
+			.get-touch-content {
+				max-width: 509px;
+
+				h3 {
+					font-family: 'HelveticaNeue';
+					font-size: 30px;
+					font-weight: 700;
+					line-height: 34px;
+					color: #000000;
+					margin: 0px 0px 30px;
+				}
+
+				.get-touch-con {
+					margin: 0px 0px 46px;
+
+					p {
+						font-family: 'Helvetica Neue';
+						font-size: 18px;
+						font-weight: 400;
+						line-height: 21px;
+						color: #000000;
+						margin: 0px 0px 20px;
+
+						a {
+							color: #D21B1B;
+							text-decoration: none;
+						}
+
+						&:last-child {
+							margin: 0px;
+						}
+					}
+				}
+
+				.get-touch-map-area {
+					display: flex;
+					max-height: 311px;
+					height: 100%;
+
+					iframe {
+						width: 100%;
+						height: 311px;
+					}
+				}
+			}
+		}
+		.get-touch-form-area {
+			p {
+				margin: 0px 0px 18px;
+
+				br {
+					display: none;
+				}
+
+				label {
+					font-family: 'HelveticaNeue';
+					font-size: 16px;
+					font-weight: 300;
+					line-height: 18px;
+					color: #8B9B8B;
+					padding-left: 8px;
+					margin: 0px 0px 10px;
+					display: block;
+				}
+				span.wpcf7-form-control-wrap {
+					display: flex;
+					flex-direction: column;
+
+					input, textarea {
+						font-family: 'Helvetica Neue';
+						font-size: 18px;
+						font-weight: 300;
+						line-height: 22px;
+						color: #000000;
+						background: #FFFFFF;
+						border: 1px solid #8B9B8B;
+						border-radius: 4px;
+						width: 100%;
+						padding: 11px 16px;
+						margin: 0px;
+					}
+
+					textarea {
+						height: 189px;
+						resize: none;
+					}
+
+					span.wpcf7-not-valid-tip {
+						font-family: 'Helvetica Neue';
+						font-size: 14px;
+						line-height: 20px;
+						font-weight: 400;
+						margin: 4px 0px 0px;
+					}
+				}
+				input.wpcf7-submit {
+					font-family: 'Helvetica Neue';
+					font-size: 18px;
+					font-weight: 500;
+					line-height: 24px;
+					color: #FFFFFF;
+					text-align: center;
+					text-decoration: none;
+					text-transform: uppercase;
+					background: #D21B1B;
+					max-width: 161px;
+					width: 100%;
+					padding: 18px 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border: 0;
+				}
+
+				&:nth-last-child(2) {
+					display: flex;
+					align-items: center;
+					margin: 0px;
+				}
+
+			}
+		}
+	}
+}
+
+/* Get in Touch Sec CSS End */
+
+/* Book Appointment Sec CSS Start */
+section.book-appointment-main-sec {
+	padding: 120px 0px 136px;
+	position: relative;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+		url(../images/cta-bg.png) no-repeat center center;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	.book-appointment-inner {
+		.book-appointment-content {
+			max-width: 460px;
+			margin-left: auto;
+
+			h4 {
+				font-family: 'Helvetica Neue';
+				font-size: 30px;
+				font-weight: 400;
+				line-height: 34px;
+				color: #FFFFFF;
+				text-align: center;
+				margin: 0px 0px 50px;
+			}
+
+			.book-appointment-btn {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+
+				a {
+					font-family: 'HelveticaNeue';
+					font-size: 18px;
+					font-weight: 700;
+					line-height: 24px;
+					color: #FFFFFF;
+					text-align: center;
+					text-decoration: none;
+					text-transform: uppercase;
+					background: #D21B1B;
+					max-width: 213px;
+					width: 100%;
+					padding: 18px 0;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+		}
+	}
+} 
+
